@@ -1,0 +1,45 @@
+#a{
+    padding-left : 500px;
+}
+
+#b{
+    padding-left :600px;
+    color: palevioletred;
+}
+
+#c{
+    padding-left:600px;
+    color:black;
+}
+
+#d{
+    padding-left:500px;
+}
+
+
+#f{
+    margin-left: 500px;
+    height: 80px;
+    width: 400px;
+    background-color:hotpink;
+}
+#q{
+    height:35px
+}
+table {
+    width: 400px;
+    /* margin: auto; */
+    margin-left:500px;
+    border:2px solid black;
+    border-collapse: collapse;
+}
+td {
+    background-color: rgb(255, 0, 102);
+    color: white;
+    padding: 15px;
+    width: 100px;
+    border:2px solid black;
+    text-align: center;
+    
+    font-weight: bold;
+}
