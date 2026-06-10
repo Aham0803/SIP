@@ -1,0 +1,29 @@
+#flex
+{
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    padding: 16px;
+
+}
+.direction
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    border: 1px solid black;
+    width: 600px;
+}
+.container
+{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.item
+{
+    background-color: aqua;
+    border: 1px solid black;
+    padding: 20px;
+}
