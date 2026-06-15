@@ -75,4 +75,65 @@ console.log(double);
 console.log(demodouble);
 
 
+// filter
+// tumhari condition check krega
+// joh bhi element condition pass hoga woh new array me jayega
 
+const even = array.filter(function(x){
+    return x% 2 == 0;
+});
+
+const odd = array.filter(x => x%2 != 0);
+console.log(even);
+console.log(odd);
+
+// reduce
+// saare elements ko ek variable me convert kardega
+
+const sum = array.reduce(function(sum , x){
+    return sum + x;
+} , 0);
+
+console.log(sum);
+
+const sum1 = array.reduce(function(sum , x){
+    return sum+x;
+});
+
+const sum2 = array.reduce((sum,x) => sum + x , 0);
+const sum3 = array.reduce((sum,x) => sum + x );
+
+console.log(sum);
+console.log(sum1);
+console.log(sum2);
+console.log(sum3);
+
+// find
+// jaise hi condition satisfy hui bese hi return kr do
+const f = array.find(function(x){
+    return x == 3;
+});
+const fdemo = array.find(x=> x == 3);
+console.log(f);
+console.log(fdemo);
+
+// some()
+// btata hai ki conditon kuch elemnsts satisfy kr rhe ya nhi
+const s = array.some(function(x){
+    return x > 3;
+});
+
+const sdemo = array.some( x => x > 3);
+console.log(s);
+console.log(sdemo);
+
+
+// every()
+// btata he ki saare elements satisfy condition kr rhe he ya nhu
+const e= array.every(function(x){
+    return x > 5;
+});
+
+const edemo = array.every(x => x>5);
+console.log(e);
+console.log(edemo);
