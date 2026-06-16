@@ -11,27 +11,26 @@
 // • Return their names sorted by average descending. 
 
 
-// let students =[
-//     {name : "john" , marks:[80,90,85]},
-//     {name : "Emma" , marks :[95,92,98]}
-// ];
+let students =[
+    {name : "john" , marks:[80,90,85]},
+    {name : "Emma" , marks :[95,92,98]}
+];
 
-// let result =[];
+let result =[];
 
-// for (let student of students){
-//     let sum = 0;
-//     for (let mark of student.marks){
-//         sum += mark;
-//     }
+for (let student of students){
+    let sum = 0;
+    for (let mark of student.marks){
+        sum += mark;
+    }
 
-//     let avg = sum / student.marks.length;
-//     result.push({
-//         name : student.name,
-//         average : avg
-//     });
-// }
-
-// console.log(result);
+    let avg = sum / student.marks.length;
+    result.push({
+        name : student.name,
+        average : avg
+    });
+}
+console.log(result);
 
 
 
