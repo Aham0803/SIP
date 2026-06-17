@@ -121,6 +121,8 @@ console.log(Object.entries(student));
 let copy=Object.assign({},student);
 console.log(copy);
 
+
+// shallow copy
 let copy1={...student};
 console.log(copy1);
 // in Operator
@@ -142,5 +144,6 @@ Object.seal(student);
 student.age=24;
 console.log(student);
 
+// deep copy
 const sdf=structuredClone(student);
 console.log(sdf);
