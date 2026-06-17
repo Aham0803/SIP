@@ -12,4 +12,3 @@ console.log(q);
 
 const w = users.filter(user =>user.age > 18);
 console.log(w);
-
