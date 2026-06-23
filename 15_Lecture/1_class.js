@@ -17,17 +17,24 @@ console.log(s2);
 console.log(s3);
 s1.study();
 // inheritence
-class ANIMAL{
-  eat(){
+class ANIMAL {
+  eat() {
     console.log("eating");
   }
-  sleep(){
+
+  sleep() {
     console.log("sleeping");
   }
 }
-class Dog extends ANIMAL{
-    bark(){
-        console.log("braking");
-    }
+
+class Dog extends ANIMAL {
+  bark() {
+    console.log("barking");
+  }
 }
-const dog
+
+const dog = new Dog();
+
+dog.eat();    // eating
+dog.sleep();  // sleeping
+dog.bark();   // barking
