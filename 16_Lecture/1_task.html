@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM and BOM Example</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            transition: 0.5s;
+        }
+
+        input{
+            padding: 10px;
+            width: 250px;
+        }
+
+        button{
+            padding: 10px 15px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        #output{
+            margin-top: 20px;
+            font-size: 20px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>DOM & BOM Demo</h1>
+
+    <input type="text" id="name" placeholder="Enter your name">
+
+    <br>
+
+    <button onclick="showMessage()">Show Message</button>
+    <button onclick="changeColor()">Change Color</button>
+    <button onclick="showTime()">Current Time</button>
+    <button onclick="openGoogle()">Open Google</button>
+
+    <div id="output"></div>
+
+    <script>
+        // DOM Manipulation
+        function showMessage() {
+            let name = document.getElementById("name").value;
+
+            if(name === ""){
+                alert("Please enter your name");
+            } else {
+                document.getElementById("output").innerHTML =
+                "Welcome " + name + "!";
+            }
+        }
+
+        // DOM + Random Color
+        function changeColor() {
+            let colors = ["lightblue","lightgreen","pink","yellow","orange"];
+            let random = Math.floor(Math.random() * colors.length);
+            document.body.style.backgroundColor = colors[random];
+        }
+
+        // BOM - Date and Time
+        function showTime() {
+            document.getElementById("output").innerHTML =
+            "Current Time: " + new Date().toLocaleTimeString();
+        }
+        function openGoogle() {
+            window.open("https://www.google.com");
+        }
+        setInterval(() => {
+            document.title = new Date().toLocaleTimeString();
+        }, 1000);
+
+    </script>
+
+</body>
+</html>
