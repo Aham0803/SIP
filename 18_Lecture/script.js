@@ -52,6 +52,3 @@ function deleteTask(index) {
 
     displayTask();
 }
-
-console.log("hello");
-console.log("hello");
